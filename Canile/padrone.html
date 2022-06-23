@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog's Star</title>
+
+    <link href="https://cdn-icons-png.flaticon.com/512/194/194630.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="titolo">Canile Dog's Star - Inserisci Padrone</h1>
+        <p id="descrizione">In questa pagina puoi inserire dei nuovi padroni, basta compilare il form sottostante</p>
+    </div>
+    <form action="insPadrone.php" method="post">
+        <label for="cf">Inserisci il codice fiscale: </label>
+        <input type="text" name="cf" placeholder="Codice Fiscale" required maxlength="16"><br>
+
+        <label for="nome">Inserisci il nome: </label>
+        <input type="text" name="nome" placeholder="Nome Padrone" required><br>
+
+        <label for="cognome">Inserisci il cognome: </label>
+        <input type="text" name="cognome" placeholder="Cognome Padrone" required><br>
+
+        <input id="send" type="submit" value="Inserisci Padrone">
+    </form>
+    <div style="text-align: center;">
+        <button id="indietro" onclick="vai('./home.html')"> Torna Indietro </button>
+    </div>
+
+    <script>
+        function vai(pagina){
+            window.open(pagina, "_self");
+        }
+    </script>
+</body>
+</html>

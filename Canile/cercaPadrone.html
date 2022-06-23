@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog's Star</title>
+
+    <link href="https://cdn-icons-png.flaticon.com/512/194/194630.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="titolo">Canile Dog's Star - Cerca Padrone</h1>
+        <p id="descrizione">In questa pagina puoi cercare uno o più padroni tramite i paramentri sotto indicati<br>
+            La ricerca sarà automaticamente incentrata sui paramentri da te inseriti, se non conosci un determinato campo lascialo in bianco</p>
+    </div>
+    <form action="cerPadrone.php" method="post">
+        <label for="cf">Codice fiscale: </label>
+        <input type="text" name="cf" placeholder="Codice Fiscale" maxlength="16"><br>
+
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" placeholder="Nome Padrone"><br>
+
+        <label for="cognome">Cognome: </label>
+        <input type="text" name="cognome" placeholder="Cognome Padrone"><br>
+
+        <input id="send" type="submit" value="Cerca Padrone">
+    </form>
+    <div style="text-align: center;">
+        <button id="indietro" onclick="vai('./cerca.html')"> Torna Indietro </button>
+    </div>
+
+    <script>
+        function vai(pagina){
+            window.open(pagina, "_self");
+        }
+    </script>
+</body>
+</html>

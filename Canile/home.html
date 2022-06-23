@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog's Star</title>
+
+    <link href="https://cdn-icons-png.flaticon.com/512/194/194630.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="titolo">Canile Dog's Star - Home Page</h1>
+        <p id="descrizione">In questa pagina puoi selezionare diverse opzioni, tra cui:</p>
+    </div>
+    <div>
+        <ul id="lista">
+            <li><i class="fa-solid fa-angle-right"></i> Inserire un padrone <button onclick="vai('./padrone.html')">Inserisci</button> </li>
+            <li><i class="fa-solid fa-angle-right"></i> Inserire un cane <button onclick="vai('./cane.html')">Inserisci</button> </li>
+            <li><i class="fa-solid fa-angle-right"></i> Cercare nel database <button onclick="vai('./cerca.html')">Cerca</button> </li>
+            <li><i class="fa-solid fa-angle-right"></i> Visualizzare dati del database <button onclick="vai('./visualizza.html')">Cerca</button> </li>
+        </ul>
+    </div>
+
+    <script>
+        function vai(pagina){
+            window.open(pagina, "_self");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/bf99179dd1.js" crossorigin="anonymous"></script>
+</body>
+</html>

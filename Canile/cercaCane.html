@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog's Star</title>
+
+    <link href="https://cdn-icons-png.flaticon.com/512/194/194630.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="titolo">Canile Dog's Star - Cerca Cane</h1>
+        <p id="descrizione">In questa pagina puoi cercare uno o più cani tramite i paramentri sotto indicati<br>
+            La ricerca sarà automaticamente incentrata sui paramentri da te inseriti, se non conosci un determinato campo lascialo in bianco</p>
+    </div>
+    <form action="cerCane.php" method="post">
+        <label for="cf">Codice Fiscale Padrone: </label>
+        <input type="text" name="cf" placeholder="Codice Fiscale" maxlength="16"><br>
+
+        <label for="nome">Nome Cane: </label>
+        <input type="text" name="nome" placeholder="Nome Cane"><br>
+
+        <label for="razza">Razza: </label>
+        <input type="text" name="razza" placeholder="Razza Cane"><br>
+
+        <label for="id">ID Cane: </label>
+        <input type="number" name="id" placeholder="ID Cane"><br>
+
+        <input id="send" type="submit" value="Cerca Cane">
+    </form>
+    <div style="text-align: center;">
+        <button id="indietro" onclick="vai('./cerca.html')"> Torna Indietro </button>
+    </div>
+
+    <script>
+        function vai(pagina){
+            window.open(pagina, "_self");
+        }
+    </script>
+</body>
+</html>

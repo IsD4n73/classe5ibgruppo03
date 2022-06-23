@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog's Star</title>
+
+    <link href="https://cdn-icons-png.flaticon.com/512/194/194630.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="titolo">Canile Dog's Star - Inserisci Cane</h1>
+        <p id="descrizione">In questa pagina puoi inserire dei nuovi cani, basta compilare il form sottostante<br>
+            <b>ATTENZIONE:</b> Sarà necessario inserire un codice fiscale valido per inserire un nuovo cane!</p>
+    </div>
+    <form action="insCane.php" method="post">
+        <label for="cf">Inserisci il codice fiscale del padrone: </label>
+        <input type="text" name="cf" placeholder="Codice Fiscale Padrone" required maxlength="16"><br>
+
+        <label for="nome">Inserisci il nome del cane: </label>
+        <input type="text" name="nome" placeholder="Nome Cane" required><br>
+
+        <label for="razza">Inserisci la razza del cane: </label>
+        <input type="text" name="razza" placeholder="Razza Cane" required><br>
+
+        <input id="send" type="submit" value="Inserisci Cane">
+    </form>
+    <div style="text-align: center;">
+        <button id="indietro" onclick="vai('./home.html')"> Torna Indietro </button>
+    </div>
+
+    <script>
+        function vai(pagina){
+            window.open(pagina, "_self");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/bf99179dd1.js" crossorigin="anonymous"></script>
+</body>
+</html>
