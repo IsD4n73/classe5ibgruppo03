@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+
+:root{
+    --colore-principale: red;
+    --colore-prezzo: #f7b527;
+}
+
+.principale {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.lista-cibo{
+      padding-top: 30px;
+      background-color: #fff;
+    
+}
+
+.lista-menu-1 .nomeProdotto {
+    padding: 6px 0 0 15px;
+    overflow: hidden;
+}
+.prezzo {
+    color: var(--colore-prezzo);
+    font-weight: 600;
+    font-size: 24px;
+}
+.lista-menu-1 {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    border-bottom: 1px dashed #ccc;
+    
+}
+
+.lista-menu-1:hover {
+    border-radius: 20px;
+    background-color: hsl(0, 100%, 70%);
+    
+}
+
+.item-cibo{
+    position: static;
+    min-height: 1px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.categoria{
+    text-align: center;
+    position: static;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Impact", "Charcoal", "sans-serif";
+    text-transform: uppercase;
+}
+
+.titolo-pranzo{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: #fff;
+    background-color: var(--colore-principale);
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--colore-principale);
+    color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: large;
+}
+
+
+
+
+/* barra di ricerca */
+label, input {
+    vertical-align: baseline;
+    color: var(--colore-principale);
+}
+
+  label {
+    margin: 0.125em 0.125em 0 0;
+  
+}
+
+#searchbar {
+    border: 2px solid var(--colore-principale);
+    border-width: 0 0 3px;
+    background-color: transparent;
+    font: 22px "Open Sans", sans-serif;
+    padding: 0.125em 0.225em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  
+}
+#searchbar:focus {
+    color: var(--color-5);
+    border-color: var(--color-5);
+    outline: none;
+}
+
+
+/* BARRA LATERALE */
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #ff0000;
+    position: fixed;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
