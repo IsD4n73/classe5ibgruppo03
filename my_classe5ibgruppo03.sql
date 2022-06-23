@@ -26,6 +26,8 @@ SET time_zone = "+00:00";
 -- Struttura della tabella `cani`
 --
 
+-- Comandi DDL (Data Definition Language) [CRATE TABLE ; DROP TBLE]
+
 CREATE TABLE IF NOT EXISTS `cani` (
   `id_cane` int NOT NULL AUTO_INCREMENT,
   `razza` varchar(50) NOT NULL,
@@ -38,6 +40,8 @@ CREATE TABLE IF NOT EXISTS `cani` (
 --
 -- Dump dei dati per la tabella `cani`
 --
+
+-- Comandi DML (Data Manipulation Language)
 
 INSERT INTO `cani` (`id_cane`, `razza`, `nome_cane`, `cf_padrone`) VALUES
 (12, 'Boxer', 'Puppy', 'JCKEXD95R20E819Q'),
