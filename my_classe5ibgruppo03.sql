@@ -1,21 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.1.7
--- http://www.phpmyadmin.net
---
--- Host: localhost
--- Generation Time: Giu 23, 2022 alle 19:09
--- Versione del server: 8.0.26
--- PHP Version: 5.6.40
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
 --
 -- Database: `my_classe5ibgruppo03`
 --
@@ -94,16 +76,9 @@ INSERT INTO `progetti` (`id_progetto`, `testo_prg`, `url_img`, `percorso_pag`, `
 (4, 'Gestione Canile', 'https://cdn-icons-png.flaticon.com/512/194/194630.png', './Canile/', 1),
 (5, 'Elenco dei link preferiti', 'https://cdn-icons-png.flaticon.com/512/1271/1271847.png', 'https://fav-urls.hyperphp.com/', 1);
 
---
--- Limiti per le tabelle scaricate
---
 
 --
 -- Limiti per la tabella `cani`
 --
 ALTER TABLE `cani`
   ADD CONSTRAINT `fk_padrone` FOREIGN KEY (`cf_padrone`) REFERENCES `padroni` (`codice_fiscale`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
