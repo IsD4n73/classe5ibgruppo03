@@ -114,15 +114,16 @@ label, input {
 
 .nav {
     height: 50px;
-    width: 100%;
     background-color: #ff0000;
-    position: fixed;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   
   .nav > .nav-links {
     display: inline;
     float: right;
     font-size: 18px;
+    border-bottom-right-radius: 15px;
   }
   
   .nav > .nav-links > a {
@@ -130,10 +131,12 @@ label, input {
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
+    border-bottom-right-radius: 15px;
   }
   
   .nav > .nav-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
+
   }
   
   .nav > #nav-check {
